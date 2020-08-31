@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<CheckBoxPreference-->
+        <!--android:key="enableNotifications"-->
+        <!--android:summary="Enable notifications to get live updates.."-->
+        <!--android:title="Checkbox Preference" />-->
+    <!--<EditTextPreference-->
+        <!--android:dialogTitle="Enter a text"-->
+        <!--android:key="text"-->
+        <!--android:summary="Click to show a text entry dialog"-->
+        <!--android:title="EditText Preference" />-->
+
+    <PreferenceCategory
+        app:key="settings"
+        app:title="Server Notifications Settings"
+        app:initialExpandedChildrenCount="0">
+
+    <PreferenceCategory
+        app:title="Temperature">
+
+        <ListPreference
+            android:dialogTitle="Select Minimum Temperature"
+            android:entries="@array/settings_temperature_list_titles"
+            android:entryValues="@array/settings_list_values"
+            android:key="minTemp"
+            android:summary="Click to select minimum temperature."
+            android:title="Minimum Temperature" />
+
+        <ListPreference
+            android:dialogTitle="Select Maximum Temperature"
+            android:entries="@array/settings_temperature_list_titles"
+            android:entryValues="@array/settings_list_values"
+            android:key="maxTemp"
+            android:summary="Click to select maximum temperature."
+            android:title="Maximum Temperature" />
+
+    </PreferenceCategory>
+
+        <PreferenceCategory
+            app:title="Humidity">
+
+            <ListPreference
+                android:dialogTitle="Select Minimum Humidity"
+                android:entries="@array/settings_humidity_list_titles"
+                android:entryValues="@array/settings_list_values"
+                android:key="minHumidity"
+                android:summary="Click to select minimum humidity."
+                android:title="Minimum Humidity" />
+
+            <ListPreference
+                android:dialogTitle="Select Maximum Humidity"
+                android:entries="@array/settings_humidity_list_titles"
+                android:entryValues="@array/settings_list_values"
+                android:key="maxHumidity"
+                android:summary="Click to select maximum humidity."
+                android:title="Maximum Humidity" />
+
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            app:title="Motion Detection and Battery">
+            <SwitchPreference
+                android:defaultValue="true"
+                android:key="enableMotionNotification"
+                android:summary="Enable to get motion detection notifications"
+                android:title="Enable Motion Notifications" />
+        </PreferenceCategory>
+
+        <ListPreference
+            android:dialogTitle="Select Low Battery Percentage"
+            android:entries="@array/settings_humidity_list_titles"
+            android:entryValues="@array/settings_list_values"
+            android:key="battery"
+            android:summary="Click to choose low battery alert percentage"
+            android:title="Low Battery Percentage" />
+    </PreferenceCategory>
+
+        <PreferenceCategory
+            app:title="Server Camera(s) Settings"
+            app:initialExpandedChildrenCount="0"
+            android:summary="Enable network to change these settings">
+            <ListPreference
+                android:dialogTitle="Select Motion Detection Camera"
+                android:entries="@array/settings_camera_titles"
+                android:entryValues="@array/settings_camera_values"
+                android:key="motion"
+                android:summary="Click to choose camera for motion detection"
+                android:title="Motion Detection Camera" />
+
+            <ListPreference
+                android:dialogTitle="Select Live Stream Camera"
+                android:entries="@array/settings_camera_titles"
+                android:entryValues="@array/settings_camera_values"
+                android:key="stream"
+                android:summary="Click to choose camera for live streaming"
+                android:title="Live Stream Camera" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

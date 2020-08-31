@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav1"
+            android:icon="@drawable/fire_menu_icon"
+            android:title="Temperature" />
+        <item
+            android:id="@+id/nav2"
+            android:enabled="true"
+            android:icon="@drawable/drop_menu_icon"
+            android:title="Humidity"
+            android:visible="true" />
+        <item
+            android:id="@+id/nav3"
+            android:icon="@drawable/bino_menu_icon_alpha"
+            android:title="Live Streaming"/>
+        <item
+            android:id="@+id/nav4"
+            android:icon="@drawable/shoes_menu_icon"
+            android:title="Motion Detection" />
+        <item
+            android:id="@+id/nav5"
+            android:icon="@drawable/battery_menu_icon"
+            android:title="Electrical Status" />
+        <item
+            android:id="@+id/nav6"
+            android:icon="@drawable/help_menu_icon"
+            android:title="Client ID Info" />
+        <item
+            android:id="@+id/nav7"
+            android:icon="@drawable/logout_menu_icon"
+            android:title="Logout" />
+    </group>
+</menu>

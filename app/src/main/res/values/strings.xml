@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Surmoni Client</string>
+    <string name="title_streamer">Streamer</string>
+    <string name="title_player">Player</string>
+    <string name="streaming_start">Start</string>
+    <string name="streaming_stop">Stop</string>
+    <string name="sign_up">SGIN UP</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="agree_to_our_terms_and_condition">Agree to our terms and Condition</string>
+    <string name="already_have_any_account">Already have any Account ?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="help_desc"><b>Help : </b>Before you get started you need two android devices.
+    Download Surmoni server application in one device and download Surmoni client app in other device.
+    Signup on client app with email and password.After initial setup get your client id from client id section.
+        This client id will be used to register server with your client application.Open your server application and
+    register your client id.Now client application will get bound to that server and will be able to get updates and monitorings of
+    temperature, humidity, motion detection etc.It will notify you about ur server status.In case of crash restart server and client applications again.You can contact us if help needed.
+        \n\n<b>Live Stream Setup : </b> To use Live Stream feature you need to register yourself on firekast.io and need to setup storage project for your videos.After
+        that copy your private-key from settings and enter it in respected field(Live Stream->private-key field or Live Stream->edit key button).
+        \n\n<b>How to use Live Stream : </b> <i>First Click START to initialize streaming on Server and after 60 secs(1 minute or on slow internet wait for 5 minutes) or more Click PLAY to watch Stream.After watching Click STOP to stop streaming on Server.</i>.
+        \n\n<b>Settings : </b> <i>After changing camera settings restart client and server applications.</i>
+        \n\n<b>Note : </b> <i>Only use one server application with only one application client otherwise applications will not
+            work and will keep on stopping.</i></string>
+
+    <array name="menu_items">
+        <item>@drawable/fire</item>
+        <item>@drawable/drop</item>
+        <item>@drawable/bino</item>
+        <item>@drawable/shoes</item>
+        <item>@drawable/battery</item>
+        <item>@drawable/client_id_icon</item>
+    </array>
+    <string-array name="menu_item_desc">
+        <item>This shows current temperature in celcius.</item>
+        <item>Select this shows current humidity in percentage.</item>
+        <item>Select this option is for live streaming.</item>
+        <item>Select this option is for live motion detection.</item>
+        <item>Select this option is for Electrical status of server.</item>
+        <item>Select this option is for help.</item>
+    </string-array>
+    <string-array name="menus">
+        <item>Temperature</item>
+        <item>Humidity</item>
+        <item>Live Stream</item>
+        <item>Motion Detection</item>
+        <item>Electrical Status</item>
+        <item>Client ID</item>
+    </string-array>
+
+</resources>
